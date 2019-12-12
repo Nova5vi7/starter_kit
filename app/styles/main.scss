@@ -18,6 +18,13 @@ body {
   justify-content: center;
   text-align: center;
 
+  // Вынести общие стили для всех блоков отдельно
+  // а именно width и height
+  // на класс .block
+  // DRY - don't repeat yourself
+  //
+  // Заменить все width на проценты
+  //
   .block-one {
     width: 300px;
     height: 450px;
@@ -46,6 +53,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+  // DRY - don't repeat yourself
+
   .square-one {
     width: 162px;
     height: 158px;
@@ -57,6 +67,8 @@ body {
     height: 158px;
     background: #df4a4a;
     border: 8px solid #000000;
+    // Круг дель так
+    // border-radius: 50%;
     border-radius: 250px;
   }
   .square-two {
@@ -70,7 +82,7 @@ body {
   display: flex;
   justify-content: center;
   .left-square {
-    width: 600px;
+    width: 600px; // проценты
     height: 430px;
     background: #35a84e;
     .center {
@@ -88,7 +100,7 @@ body {
     }
   }
   .rigth-square {
-    width: 599px;
+    width: 599px; // проценты
     height: 431px;
     background: #429d56;
   }
