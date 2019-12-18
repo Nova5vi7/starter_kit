@@ -11,12 +11,68 @@ body {
   }
 }
 
-.section-one {
-  width: 1200px;
+.section-one .block {
   height: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   .block-ziro {
     width: 300px;
     height: 450px;
     background: url("../images/jellyfish.jpg");
+  }
+  .block-one {
+    width: 900px;
+    height: 450px;
+    background: url("../images/foliage.jpg");
+  }
+  .block-two {
+    width: 650px;
+    height: 145px;
+    background: #ff0000;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 112px;
+    align-items: center;
+    color: #fdfdfd;
+  }
+}
+.section-two .planet {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 200px;
+  .tic {
+    width: 162px;
+    height: 158px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 250px;
+  }
+  .plan {
+    display: flex;
+    margin: 22px;
+    height: 110px;
+    justify-content: center;
+  }
+  .tic-one {
+  }
+}
+.section-three {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 860px;
+  .jop {
+    width: 50%;
+    height: 430px;
+  }
+  .forest {
+    background: url(../images/forest.jpg);
+  }
+  .sunset {
+    background: url(../images/sunset.jpg);
   }
 }
