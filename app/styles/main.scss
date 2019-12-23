@@ -27,37 +27,59 @@ body {
     background: url("../images/foliage.jpg");
   }
   .block-two {
-    width: 650px;
+    display: inline-block;
+    // width: 650px;
     height: 145px;
     background: #ff0000;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-style: italic;
     font-weight: normal;
-    font-size: 96px;
+    font-size: 94px;
     line-height: 112px;
     align-items: center;
     color: #fdfdfd;
+    margin: 166px 0 0 246px;
+    padding-top: 13px;
   }
 }
-.section-two .planet {
+.section-two .planets {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 200px;
-  .tic {
+
+  padding: 10px 0;
+  background-color: black;
+
+  .planet {
     width: 162px;
-    height: 158px;
-    border: 1px solid #000000;
+    height: 162px;
+    border: 1px solid #ff0000;
     box-sizing: border-box;
     border-radius: 250px;
+    margin: 10px 28.5px;
   }
-  .plan {
-    display: flex;
-    margin: 22px;
-    height: 110px;
-    justify-content: center;
+
+  .planet-one {
+    // работа как с текстом
+    text-align: center;
+    line-height: 162px;
+    img {
+      vertical-align: middle;
+    }
   }
-  .tic-one {
+  .planet-two {
+    position: relative;
+    img {
+      position: absolute;
+      // отступ на половину родителя с лева
+      left: 50%;
+      // отступ на половину родителя с верху
+      top: 50%;
+      // минус половина высоты изображения с верху
+      margin-top: -55px;
+      // минус половина ширины изображения с лева
+      margin-left: -55px;
+    }
   }
 }
 .section-three {
