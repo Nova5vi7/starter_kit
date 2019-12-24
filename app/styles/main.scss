@@ -22,13 +22,17 @@ body {
     background: url("../images/jellyfish.jpg");
   }
   .block-one {
+    position: relative;
     width: 900px;
     height: 450px;
     background: url("../images/foliage.jpg");
   }
   .block-two {
     display: inline-block;
-    // width: 650px;
+    position: absolute;
+    right: 4px;
+    bottom: 138px;
+    width: 650px;
     height: 145px;
     background: #ff0000;
     font-family: "Roboto", sans-serif;
@@ -38,7 +42,6 @@ body {
     line-height: 112px;
     align-items: center;
     color: #fdfdfd;
-    margin: 166px 0 0 246px;
     padding-top: 13px;
   }
 }
@@ -48,7 +51,7 @@ body {
   justify-content: center;
 
   padding: 10px 0;
-  background-color: black;
+  background-color: white;
 
   .planet {
     width: 162px;
@@ -80,6 +83,16 @@ body {
       // минус половина ширины изображения с лева
       margin-left: -55px;
     }
+    
+  }
+  .planet-three {
+    position: relative;
+    img {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+    }
+
   }
 }
 .section-three {
