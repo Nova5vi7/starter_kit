@@ -56,7 +56,7 @@ body {
   .planet {
     width: 162px;
     height: 162px;
-    border: 1px solid #ff0000;
+    border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 250px;
     margin: 10px 28.5px;
@@ -83,7 +83,6 @@ body {
       // минус половина ширины изображения с лева
       margin-left: -55px;
     }
-    
   }
   .planet-three {
     position: relative;
@@ -92,7 +91,6 @@ body {
       top: 25px;
       left: 25px;
     }
-
   }
 }
 .section-three {
@@ -105,9 +103,50 @@ body {
     height: 430px;
   }
   .forest {
-    background: url(../images/forest.jpg);
+    background-image: url(../images/forest.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto auto;
+    background-position: bottom 0 right 0;
+    .forestry {
+      position: absolute;
+      width: 597px;
+      height: 80px;
+      background: rgba(3, 0, 0, 0.64);
+      border-radius: 2px;
+      left: 78px;
+      top: 1003px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 107px;
+      color: #ffffff;
+    }
   }
   .sunset {
-    background: url(../images/sunset.jpg);
+    background-image: url(../images/sunset.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 0;
+    background-size: auto auto;
+    .desert {
+      position: absolute;
+      width: 599px;
+      height: 77px;
+      top: 1004px;
+      right: 76px;
+      background: rgba(3, 0, 0, 0.64);
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 106px;
+      text-align: right;
+
+      color: #ffffff;
+    }
   }
 }
