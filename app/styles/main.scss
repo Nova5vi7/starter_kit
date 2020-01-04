@@ -119,8 +119,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto auto;
-    background-position: bottom 0 right 0;
+    //background-size: auto auto;
+    //background-position: bottom 0 right 0;
     position: relative;
     .forestry {
       position: absolute;
@@ -150,7 +150,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom 0 left 0;
-    background-size: auto auto;
+    //background-size: auto auto;
     position: relative;
     .desert {
       position: absolute;
@@ -172,6 +172,18 @@ body {
       text-align: right;
 
       color: #ffffff;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section-three {
+    .nature {
+      display: flex;
+      flex-direction: column;
+      .jop {
+        width: 100%;
+      }
     }
   }
 }
