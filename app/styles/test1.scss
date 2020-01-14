@@ -1,0 +1,79 @@
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!НЕ ТРОГАТЬ!!!!!!!!!!!
+
+.task-wrp {
+  height: 500px;
+}
+
+.first-item,
+.second-item .third-item {
+  position: absolute;
+}
+
+.first-item {
+  background-color: #2de62c;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  width: 200px;
+  height: 200px;
+}
+
+.second-item {
+  width: 150px;
+  height: 150px;
+  background-color: #e66856;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+
+.third-item {
+  border-radius: 10px 50% 25px 40%;
+  width: 100px;
+  height: 100px;
+  background-color: #3841e6;
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// Писть только снизу
+
+// Уровень 1
+// Только стили позиционирования!!! -----> postion: blablabla
+
+
+.task-1 {
+  .first-item {
+  }
+  .second-item {
+  }
+  .third-item {
+  }
+}
+
+// Уровень 2
+
+// Использовать z-index
+// z-index
+
+
+.task-1 {
+  .first-item {
+  }
+  .second-item {
+  }
+  .third-item {
+  }
+}
+
+// Уровень 3
+//
+// Обязательно использовать transform: translate
+// Узнать что это такое!!!!!
+
+.task-3 {
+  .first-item {
+  }
+
+  .second-item {
+  }
+  .third-item {
+  }
+}
