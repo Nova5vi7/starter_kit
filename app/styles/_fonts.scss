@@ -4,3 +4,6 @@
 // font-face - название миксина
 // в скобках (название шрифта, путь к шрифту)
 @include font-face("raleway-ex", "../fonts/RalewayRegular/RalewayRegular");
+
+//добавил
+@include font-face("FiraSansRegular", "../fonts/FiraSansRegular/FiraSansRegular");
