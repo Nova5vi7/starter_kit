@@ -4,10 +4,9 @@
 @import "./_vars.scss";
 
 body {
-  position: relative;
   padding: 0;
   margin: 0;
-  font-family: "RalewayRegular", serif;
+  // font-family: "raleway-ex", serif; //а тут всё круто
   opacity: 1;
   
 
@@ -18,9 +17,6 @@ body {
 
     .site-header {
       min-height: 700px;
-    }
-    .boy {
-      color: #fff;
     }
   }
 }
