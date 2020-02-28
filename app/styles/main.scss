@@ -1,4 +1,7 @@
+// исходник css
 @import "./_fonts.scss";
+@import "./_libs.scss";
+@import "./_vars.scss";
 
 body {
   position: relative;
@@ -6,6 +9,8 @@ body {
   margin: 0;
   font-family: "RalewayRegular", serif;
   opacity: 1;
+  
+
 
   &.is-home {
     opacity: 1;
@@ -14,5 +19,9 @@ body {
     .site-header {
       min-height: 700px;
     }
+    .boy {
+      color: #fff;
+    }
   }
 }
+@import "./_media"; //всегда в конце!
