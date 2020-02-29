@@ -3,24 +3,18 @@
 @import "./_libs.scss";
 @import "./_vars.scss";
 
+html, body {
+  height: 100%;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  // font-family: "raleway-ex", serif; //а тут всё круто
-   font-family: $default-font; //и так тоже
+  font-size: 16px;//относиться ко всем шрифтам
+  min-width: 320px;
+  position: relative;
+  line-height: 1.75;
+  font-family: $default-font;
+  overflow: hidden;
   opacity: 1;
 
-  h1 {
-    font-family: $head-font; //и тут всё круто
-  }
-
-  &.is-home {
-    opacity: 1;
-    color: #fff;
-
-    .site-header {
-      min-height: 700px;
-    }
-  }
 }
 @import "./_media"; //всегда в конце!
