@@ -8,7 +8,15 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>unit two</title>
+
+    <!-- Chrome, Firefix OS and Opera -->
+    <meta name="theme-color" content="#1a1a1a" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbuttom-color" content="#1a1a1a" />
+    <!-- IOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1a1a1a" />
+
+    <title>S&Mitler</title>
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.css" />
     <link rel="stylesheet" href="css/main.min.css" />
@@ -22,14 +30,45 @@
       }
     </style>
   </head>
+
   <body class="is-home">
-
-
-
+    <div id="my-page">
+      <div id="my-header">
+        <header class="site-header">
+          <div class="top-line">
+            <a href="#" class="logo">
+              <img src="img/logo-1.svg" alt="Салон красоты Смитлер" />
+            </a>
+            <div class="phone">
+              <i class="fa fa-mobile"></i>+7 (495) 118-94-35
+            </div>
+            <a href="#my-menu" class="hamburger hamburger--emphatic">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </a>
+            <nav id="my-menu">
+              <ul>
+                <li><a href="#">Парикмахерский сервис</a></li>
+                <li class="active"><a href="#">Косметологический сервис</a></li>
+                <li><a href="#">Маникюрный сервис</a></li>
+                <li><a href="#">Массаж и SPA</a></li>
+                <li><a href="#">Солярий</a></li>
+                <li><a href="#">Наши специалисты</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Прайс-лист</a></li>
+                <li><a href="#">Наши сертификаты</a></li>
+                <li><a href="#">О салоне</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+      <div id="my-content"></div>
+      <div id="my-footer"></div>
+    </div>
     <!-- build:js scripts/main.js -->
-    <script src="libs/jquery/dist/jquery.min.js"></script>
-    <script src="libs/mmenu/js/jquery.mmenu.all.min.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="js/scripts.min.js"></script>
     <!-- endbuild -->
   </body>
 </html>
