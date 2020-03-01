@@ -4,9 +4,14 @@
 // font-face - название миксина
 // в скобках (название шрифта, путь к шрифту)
 @include font-face("raleway", "../fonts/RalewayRegular/RalewayRegular");
-@include font-face("raleway", bold "../fonts/RalewayBold/RalewayBold");
-@include font-face("raleway", 800 "../fonts/RalewayExtraBold/RalewayExtraBold");
-@include font-face("raleway", 300 "../fonts/RalewayLight/RalewayLight");
-@include font-face("raleway", 600 "../fonts/RalewaySemiBold/RalewaySemiBold");
-@include font-face("raleway", 100 "../fonts/RalewayThin/RalewayThin");
+@include font-face("FontAwesome", "../fonts/fontawesome/FontAwesome");
 @include font-face("firasans-ex", "../fonts/FiraSansRaleway/FiraSansRaleway");
+@include font-face("raleway", "../fonts/RalewayBold/RalewayBold", bold);
+@include font-face(
+  "raleway",
+  "../fonts/RalewayExtraBold/RalewayExtraBold",
+  800
+);
+@include font-face("raleway", "../fonts/RalewayLight/RalewayLight", 300);
+@include font-face("raleway", "../fonts/RalewaySemiBold/RalewaySemiBold", 600);
+@include font-face("raleway", "../fonts/RalewayThin/RalewayThin", 100);
