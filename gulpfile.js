@@ -29,6 +29,8 @@ gulp.task("scripts", ["common-js"], function() {
       .src([
         "app/libs/jquery/dist/jquery.min.js",
         "app/libs/mmenu/js/jquery.mmenu.all.min.js",
+        "app/libs/owl.carousel/owl.carousel.min.js",
+        "app/libs/equalHeights/equalheights.js",
         "app/js/common.min.js" // Всегда в конце
       ])
       .pipe(concat("scripts.min.js"))
@@ -50,16 +52,14 @@ gulp.task("browser-sync", function() {
 });
 
 gulp.task("scss", function() {
-  return (
-    gulp
-      .src("app/styles/**/*.scss")
-      .pipe(sass().on("error", notify.onError()))
-      .pipe(rename({ suffix: ".min", prefix: "" }))
-      .pipe(autoprefixer(["last 15 versions"]))
-      .pipe(cleanCSS())
-      .pipe(gulp.dest("app/css"))
-      .pipe(browserSync.reload({ stream: true }))
-  );
+  return gulp
+    .src("app/styles/**/*.scss")
+    .pipe(sass().on("error", notify.onError()))
+    .pipe(rename({ suffix: ".min", prefix: "" }))
+    .pipe(autoprefixer(["last 15 versions"]))
+    .pipe(cleanCSS())
+    .pipe(gulp.dest("app/css"))
+    .pipe(browserSync.reload({ stream: true }));
 });
 
 gulp.task("watch", ["scss", "scripts", "browser-sync"], function() {

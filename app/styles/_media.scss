@@ -2,3 +2,62 @@
 @import "./vars.scss";
 
 // Desktop First (первый рабочий стол)
+@media only screen and (max-width: 1200px) {
+  .welcome {
+    .h1 {
+      font-size: 64px;
+    }
+  }
+  .header-contacts {
+    font-size: 14px;
+  }
+  .carousel-services-item {
+    flex-direction: column;
+  }
+}
+
+// Medium Devices, Desktops
+@media only screen and (max-width: 992px) {
+  .welcome {
+    .h1 {
+      font-size: 48px;
+    }
+  }
+}
+// //
+@media only screen and (max-width: 768px) {
+  .header-contacts {
+    .phone-h {
+      text-align: left;
+    }
+  }
+  .button {
+    padding: 12px 36px;
+  }
+}
+// //
+@media only screen and (max-width: 480px) {
+  .welcome {
+    .h1 {
+      font-size: 28px;
+      margin-top: 5px;
+    }
+    p {
+      span {
+        font-size: 9px;
+      }
+    }
+    strong {
+      margin-top: 14px;
+      font-size: 14px;
+    }
+  }
+  .header-composition {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+//
+@media only screen, (max-width: 320px) {
+}
