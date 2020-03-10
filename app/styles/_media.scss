@@ -14,6 +14,16 @@
   .carousel-services-item {
     flex-direction: column;
   }
+  .s {
+    &-king,
+    &-review,
+    &-partners {
+      padding: 8% 0;
+    }
+    &-call {
+      background-size: cover;
+    }
+  }
 }
 
 // Medium Devices, Desktops
@@ -21,6 +31,24 @@
   .welcome {
     .h1 {
       font-size: 48px;
+    }
+  }
+  .s-call {
+    &::before {
+      width: 100%;
+    }
+    .callback {
+      padding: 12% 0;
+    }
+  }
+  .footer-addr {
+    margin-bottom: 12px;
+    .footer-phone {
+      font-size: 24px;
+      padding-top: 0;
+      .fa {
+        top: 9px;
+      }
     }
   }
 }
@@ -34,7 +62,38 @@
   .button {
     padding: 12px 36px;
   }
+  .quotes {
+    display: none;
+  }
+  .partners {
+    .owl-nav {
+      > div {
+        &.owl-prev {
+          left: 0;
+        }
+        &.owl-next {
+          right: 0;
+        }
+      }
+    }
+    .s-partners {
+      .h2 {
+        margin: 0;
+      }
+    }
+  }
+
+  .social-footer {
+    margin-top: 0;
+    .soc li a {
+      margin-top: 0;
+    }
+  }
+  .footer-menu {
+    padding-left: 20px;
+  }
 }
+
 // //
 @media only screen and (max-width: 480px) {
   .welcome {
